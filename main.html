@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            border: 1px solid black;
-            background-color: rgb(204, 204, 204);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playlist</title>
+  <style>
+    body {
+      background-color: rgb(204, 204, 204);
+    }
 
-        div {
-            background-color: aliceblue;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 10px;
-            border-width: 5px;
-        }
+    h1, h2 {
+      text-align: center;
+    }
 
-        video {
-            padding: 43px;
-            height: 500px;
-            width: 700px;
-            border: 1px solid black;
-        }
-    </style>
+    .player_one, .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 50%;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li a {
+      text-decoration-line: none;
+    }
+  </style>
 </head>
-
 <body>
 
-    <h1 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-        My Playlist
-    </h1>
+  <h1>My Playlist</h1>
+  <h2>Now Playing...</h2>
+  <h2>MP3 songs</h2>
 
-    <div>
-        <ul>song 1</ul>
-        <ul>song 2</ul>
-        <ul>song 3</ul>
-        <ul>song 4</ul>
-        <ul>song 5</ul>
-    </div>
+  <div>
+    <ul>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
+      <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
 
-    <h2 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-        Now Playing ...
-    </h2>
+  <div class="player_one">
+    <video controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-    <div>
-        <video width="1000px" controls src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4"></video>
-        <h3 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-            Mp3 Songs
-        </h3>
-        <audio controls style="width: 800px;" src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3"></audio>
-    </div>
-    
+  <div class="player_two">
+    <audio controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
 </body>
-
 </html>
